@@ -1,0 +1,89 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+ 
+}
+header h1{
+ position: fixed;
+ top: 1vh;
+
+}
+nav{
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  width: 75%;
+  left: 25%;
+  right: 0vw;
+  bottom: 0;
+
+ 
+  
+}
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 10% auto;
+  width: 80%;
+  
+ 
+
+
+}
+nav ul li a{
+  display: block;
+  padding: 0.75em 1em;
+  
+  text-decoration: none;
+  color: #e84343;
+  font-weight: bold;
+}
+.btnCerrar{
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  z-index: 1000;
+  float: right;
+  font-size: 2em;
+
+  
+}
+.ocultarBtn{
+  display: none;
+
+}
+
+@media (min-width: 700px){
+  nav{
+    position: fixed;
+    background: none;
+    width: auto;
+    
+
+  }
+  nav ul{
+    position: fixed;
+    display: flex;
+    margin: 0;
+    width: auto;
+    right: 10%;
+  }
+  nav ul li{
+    margin: 0;
+  }
+  nav ul li a{
+    padding: 0.5em 1em;
+  }
+  .btnCerrar{
+    display: none;
+  }
+  .ocultarBtn{
+    display: block;
+  }
+
+}
+
+

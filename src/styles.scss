@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #363636;
+ 
+}
+header{
+  background: #f847e6;
+  color:white;
+  padding: 1em;
+  font-size: 1em;
+}
+header h1{
+  font-size: 1.65em;
+  margin: 0;
+  top: 0;
+}
+main{
+  padding: 1em;
+}
+main p{
+  margin: 0.5em 0;
+}
+
+.old-standard tt-regular {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.old-standard tt-bold {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard tt-regular-italic {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* For Chrome, Safari, and newer Edge browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Change to your desired background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #a02c2c; /* Change to your desired thumb color */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change to your desired thumb color on hover */
+}
