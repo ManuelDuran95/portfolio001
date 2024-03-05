@@ -1,14 +1,17 @@
-<header>
-  <h1>Manuel Duran</h1>
+<header >
+  <ul class="list1">
+    
+    <li><a routerLink="/" (click)="seleccionarElemento('inicio')"><h1><i class="fa-brands fa-dev"></i> | Manuel Duran</h1></a></li>
+  </ul>
   <nav [ngClass]="{'ocultarBtn': show===true}" >
     <ul>
-      <li><a href="" >Inicio1</a></li>
-      <li><a href="" >Proyectos</a></li>
-      <li><a href="" >CV</a></li>
-      <li><a href="" >Cotacto</a></li>
+      <li [ngClass]="{'elemento-activo': elementoActivo === 'inicio'}"><a (click)="seleccionarElemento('inicio'); hideMenu()" routerLink="/">Inicio1</a></li>
+      <li [ngClass]="{'elemento-activo': elementoActivo === 'proyectos'}"><a (click)="seleccionarElemento('proyectos') ; hideMenu()" routerLink="/projects" >Proyectos</a></li>
+      <li [ngClass]="{'elemento-activo': elementoActivo === 'CV'}"><a (click)="seleccionarElemento('CV'); hideMenu()" routerLink="/resumen" >CV</a></li>
+      <li [ngClass]="{'elemento-activo': elementoActivo === 'contacto'}"><a (click)="seleccionarElemento('contacto'); hideMenu()" routerLink="/contacto">Cotacto</a></li>
     </ul>
   </nav>
-  <span  class="btnCerrar" [ngClass]="{'mi-clase': show}" (click)="hideMenu()">
+  <span  class="btnCerrar"  (click)="hideMenu()">
     <i class="fa-solid fa-bars"></i>
   </span>
 </header>

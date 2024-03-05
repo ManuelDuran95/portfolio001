@@ -1,11 +1,53 @@
+@import '../../assets/colors.scss';
 .text1{
     color: rgb(163, 66, 223);
     font-size: large;
     font-family: 'Old Standard TT', serif;
 }
 .cont1{
-    padding-top: 20px; 
-    display: block; 
-    position: static; 
-    top: 20px;
+ 
+    position: relative; 
+    z-index: -1;
+    
+
+  
+    
 }
+div h3{
+position: relative;
+top: 20px;
+    color: $color-subtitulos;
+    font-size: large;
+    font-family: 'Old Standard TT', serif;
+  
+}
+p{
+    color: $color-parrafo;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/* div h1 span{
+    color: $color-titulos;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    animation: typing 2s steps(18), blink .5s infinite alternate;
+    overflow: hidden;
+   
+}
+@keyframes typing {
+    from { width: 0 }
+    
+}
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+ */

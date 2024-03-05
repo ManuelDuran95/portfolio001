@@ -1,89 +1,148 @@
-header{
+@import '../../assets/colors.scss';
+
+header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 8vh;
- 
 }
-header h1{
- position: fixed;
- top: 1vh;
-
-}
-nav{
+header h1 {
   position: fixed;
-  background: rgba(0,0,0,0.8);
+  top: 1vh;
+}
+
+/* Resetear estilos de la lista y quitar estilos de viñetas */
+ul.list1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Hacer que los elementos se alineen en línea */
+}
+
+/* Alinear elementos horizontalmente */
+ul.list1 li {
+  display: inline-block; /* Hacer que los elementos de la lista se muestren en línea */
+  margin-right: 10px; /* Ajustar el espaciado entre elementos según sea necesario */
+}
+
+/* Opcional: Estilo para el logo2img */
+ul.list1 li img.logo2img {
+  max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+  height: auto; /* Hacer que la altura de la imagen sea automática */
+}
+header ul li a {
+  padding: 0.75em 1em;
+
+  text-decoration: none;
+  color: $color-titulos;
+  font-weight: bold;
+}
+
+nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
   top: 0;
   width: 75%;
   left: 25%;
   right: 0vw;
   bottom: 0;
-
- 
-  
+  z-index: 100;
 }
-nav ul{
+nav ul {
   list-style: none;
   padding: 0;
   margin: 10% auto;
   width: 80%;
-  
- 
-
-
 }
-nav ul li a{
+nav ul li a {
   display: block;
   padding: 0.75em 1em;
-  
+
   text-decoration: none;
-  color: #e84343;
+  color: $color-subtitulos;
   font-weight: bold;
 }
-.btnCerrar{
+.btnCerrar {
   position: fixed;
   top: 1%;
   right: 2%;
   z-index: 1000;
   float: right;
   font-size: 2em;
-
-  
 }
-.ocultarBtn{
+.ocultarBtn {
   display: none;
-
 }
 
-@media (min-width: 700px){
-  nav{
+@media (min-width: 700px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5vh;
+  }
+  header ul li a {
+    display: block;
+    padding: 0.75em 1em;
+  
+    text-decoration: none;
+    color: $color-subtitulos;
+    font-weight: bold;
+  }
+  nav {
     position: fixed;
     background: none;
     width: auto;
-    
-
   }
-  nav ul{
+
+  nav ul {
     position: fixed;
     display: flex;
     margin: 0;
     width: auto;
     right: 10%;
   }
-  nav ul li{
+  nav ul li {
     margin: 0;
   }
-  nav ul li a{
+  nav ul li a {
     padding: 0.5em 1em;
+
+    position: relative;
+    top: 1vh;
   }
-  .btnCerrar{
+  nav ul li a:hover {
+    border-bottom: 4px solid #fff;
+  }
+
+  .btnCerrar {
     display: none;
   }
-  .ocultarBtn{
+  .ocultarBtn {
     display: block;
   }
+  /* Resetear estilos de la lista y quitar estilos de viñetas */
+  ul.list1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hacer que los elementos se alineen en línea */
+  }
 
+  /* Alinear elementos horizontalmente */
+  ul.list1 li {
+    display: inline-block; /* Hacer que los elementos de la lista se muestren en línea */
+    margin-right: 10px; /* Ajustar el espaciado entre elementos según sea necesario */
+  }
+
+  /* Opcional: Estilo para el logo2img */
+  ul.list1 li img.logo2img {
+    max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+    height: auto; /* Hacer que la altura de la imagen sea automática */
+  }
+  .elemento-activo{
+    background: #dff;
+  }
 }
-
-

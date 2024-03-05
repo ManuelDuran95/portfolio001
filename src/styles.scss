@@ -1,16 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/colors.scss';
 body {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
-  background-color: #363636;
+  background-color: $color-fondo;
  
 }
+a{
+  color: $color-primario;
+  text-decoration: none;
+}
+p{
+  color: $color-parrafo;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+h1{
+  color: $color-titulos;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
 header{
-  background: #f847e6;
+  background: $color-fondo;
   color:white;
   padding: 1em;
   font-size: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); // Puedes ajustar el color y la intensidad del resplandor según tu diseño
 }
 header h1{
   font-size: 1.65em;
