@@ -1,0 +1,14 @@
+@import '../../assets/colors.scss';
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-fondo;
+    color: $color-parrafo;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-size: small;
+    z-index: -1;
+}

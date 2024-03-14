@@ -10,6 +10,12 @@ import { CvComponent } from './cv/cv.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { SocialnetworksComponent } from './socialnetworks/socialnetworks.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { BioComponent } from './bio/bio.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +24,18 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     View1Component,
     ProjectsComponent,
     CvComponent,
-    ContactoComponent
+    ContactoComponent,
+    SocialnetworksComponent,
+    FooterComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

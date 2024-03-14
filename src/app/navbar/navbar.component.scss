@@ -10,6 +10,7 @@ header {
 header h1 {
   position: fixed;
   top: 1vh;
+  font-weight: bold;
 }
 
 /* Resetear estilos de la lista y quitar estilos de viñetas */
@@ -47,7 +48,7 @@ nav {
   left: 25%;
   right: 0vw;
   bottom: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 nav ul {
   list-style: none;

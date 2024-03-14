@@ -1,5 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TypingEfectService } from '../services/typing-efect.service';
+// @ts-ignore
+import Typewriter from 't-writer.js';
+
 
 @Component({
   selector: 'app-view1',
@@ -15,10 +18,32 @@ export class View1Component implements OnInit, OnDestroy{
  myStrings = ["String 1", "String 2", "String 3", "String 4", "String 5"];
 
   ngOnInit(): void {
-    this.typingEfectService.startTypingEffect();
+   let target = document.querySelector('.tw')
+    const options = {
+      loop: true,
+      typeColor: '#bbbec1',
+      cursorColor:'#bbbec1',
+      deleteSpeed: 90
+    }
+    
+    const writer = new Typewriter(target, options)
+    writer
+    .strings(
+      600,
+      "Full Stack Developer",
+      "Web Developer", 
+      "Professional Coder",
+      "Java Developer",
+      "Angular Dev",
+      "DevOps Junnior"
+    )
+    .start()
+          
+      
+  
   }
   ngOnDestroy(): void {
-      this.typingEfectService.stopTypingEffect();
+      
   }
   selectStringEvery5Seconds(strings: string[]): void {
     let index = 0;
@@ -43,4 +68,5 @@ export class View1Component implements OnInit, OnDestroy{
     // Puedes devolver el ID del intervalo si necesitas detenerlo más tarde
     // return intervalId;
   }
+
 }

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/colors.scss';
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'EBGaramond';
   margin: 0;
   padding: 0;
   background-color: $color-fondo;
@@ -41,28 +41,11 @@ main p{
   margin: 0.5em 0;
 }
 
-.old-standard tt-regular {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.old-standard tt-bold {
-  font-family: "Old Standard TT", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.old-standard tt-regular-italic {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-style: italic;
-}
 
 
 /* For Chrome, Safari, and newer Edge browsers */
 ::-webkit-scrollbar {
-  width: 12px; /* Adjust the width as needed */
+  width: 7px; /* Adjust the width as needed */
 }
 
 /* Track */
@@ -78,4 +61,25 @@ main p{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Change to your desired thumb color on hover */
+}
+
+@font-face {
+  font-family: 'EBGaramond';
+  font-style: normal;
+  font-weight: 400;
+
+  src: 
+   local('EBGaramond'),
+   url("assets/fonts/EBGaramond-Italic-VariableFont_wght.ttf") format("truetype")
+   url("assets/fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Ojuju';
+  font-style: normal;
+  font-weight: 400;
+
+  src: 
+   local('Ojuju'),
+   url(assets/fonts/Ojuju/Ojuju-VariableFont_wght.ttf) format("truetype");
 }
