@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Manuel Mata</h1>
-<h3 align="center">A passionate frontend developer from El Salvador</h3>
-
+<h3 align="center">A passionate frontend and backend developer from El Salvador</h3>
+<h4 align="center">  I am deeply passionate about crafting and advancing web applications. Continuously seeking fresh challenges and embracing the opportunity to learn cutting-edge technologies, I thrive on pushing my boundaries.</h4>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=manuelduran95&label=Profile%20views&color=0e75b6&style=flat" alt="manuelduran95" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=manuelduran95" alt="manuelduran95" /></a> </p>
