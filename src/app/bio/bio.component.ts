@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './bio.component.scss'
 })
 export class BioComponent {
+  
+
 
 }

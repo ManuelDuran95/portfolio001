@@ -15,6 +15,8 @@ p{
     font-size: 1.2em;
     line-height: 1.5em;
     text-align: justify;
+
+ 
 }
 
  div h1 {
@@ -30,12 +32,14 @@ p{
    
 }
 
+
 .parrafo1{
     width: 100%;
     text-align: justify;
     font-size: 1rem;
     display: block;
     margin-top: 35px;
+
 }
 .parrafo1 ul li{
     color: $color-subtitulos;
@@ -75,7 +79,7 @@ p{
 }
 
 .card {
-    
+  
     max-width: 370px;
     height: 354px;
     max-height: 354px;
@@ -89,7 +93,7 @@ p{
     width: 100%;
     height: auto;
     filter: drop-shadow(0 0 0.75rem $color-parrafo);
-   
+
 
 }
 .socialNets{
