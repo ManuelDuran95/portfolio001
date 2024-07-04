@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+// @ts-ignore
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,9 @@ export class AppComponent implements OnInit{
       /** spinner ends after 5 seconds */
       this.spinner.hide();
     }, 100);
+
+    AOS.init();
+    window.addEventListener('load',AOS.refresh);
   }
   
 }

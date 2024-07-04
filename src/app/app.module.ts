@@ -14,6 +14,7 @@ import { SocialnetworksComponent } from './socialnetworks/socialnetworks.compone
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { BioComponent } from './bio/bio.component';
+import { ResumeComponent } from './resume/resume.component';
 
 
 
@@ -27,7 +28,8 @@ import { BioComponent } from './bio/bio.component';
     ContactoComponent,
     SocialnetworksComponent,
     FooterComponent,
-    BioComponent
+    BioComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

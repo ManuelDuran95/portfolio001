@@ -8,6 +8,7 @@
       <li [ngClass]="{'elemento-activo': elementoActivo === 'inicio'}"><a (click)="seleccionarElemento('inicio'); hideMenu()" routerLink="/">Inicio</a></li>
       <li [ngClass]="{'elemento-activo': elementoActivo === 'proyectos'}"><a (click)="seleccionarElemento('proyectos') ; hideMenu()" routerLink="/projects" >Proyectos</a></li>
       <li [ngClass]="{'elemento-activo': elementoActivo === 'CV'}"><a (click)="seleccionarElemento('CV'); hideMenu()" routerLink="/bio" >Bio</a></li>
+      <li [ngClass]="{'elemento-activo': elementoActivo === 'resume'}"><a (click)="seleccionarElemento('resume'); hideMenu()" routerLink="/resume">Resume</a></li>
       <li [ngClass]="{'elemento-activo': elementoActivo === 'contacto'}"><a (click)="seleccionarElemento('contacto'); hideMenu()" routerLink="/contacto">Cotacto</a></li>
     </ul>
   </nav>

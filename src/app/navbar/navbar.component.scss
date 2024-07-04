@@ -6,6 +6,8 @@ header {
   left: 0;
   right: 0;
   height: 8vh;
+  z-index: 1000;
+
 }
 header h1 {
   position: fixed;
@@ -82,7 +84,7 @@ nav ul li a {
     top: 0;
     left: 0;
     right: 0;
-    height: 5vh;
+    height: fit-content;
   }
   header ul li a {
     display: block;
@@ -145,5 +147,6 @@ nav ul li a {
   }
   .elemento-activo{
     background: #dff;
+    
   }
 }
